@@ -1,0 +1,3 @@
+name = "miro-portal"
+compatibility_date = "2026-06-30"
+pages_build_output_dir = "dist"

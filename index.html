@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#07080c" />
+    <meta
+      name="description"
+      content="郑州米罗网络科技有限公司是一家专注游戏研发、发行合作与长期运营的网络科技公司。"
+    />
+    <title>郑州米罗网络科技有限公司 | Miro Game Studio</title>
+    <link rel="icon" href="/miro-mark.png" />
+    <link rel="preload" as="image" href="/miro-logo-transparent.png" />
+    <script type="module" src="/src/main.js"></script>
+  </head>
+  <body>
+    <div class="site-shell" id="top">
+      <header class="site-header" data-header>
+        <a class="brand" href="#top" aria-label="回到首页">
+          <span class="brand-image">
+            <img src="/miro-mark.png" alt="Miro" />
+          </span>
+          <span class="brand-name">米罗网络</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="主导航">
+          <a href="#about">公司简介</a>
+          <a href="#games">游戏作品</a>
+          <a href="#capabilities">研发能力</a>
+          <a href="#contact">联系方式</a>
+        </nav>
+
+        <a class="header-action" href="#contact">商务合作</a>
+
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          data-menu-button
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+          <span class="sr-only">打开导航</span>
+        </button>
+      </header>
+
+      <nav class="mobile-menu" id="mobile-menu" hidden data-mobile-menu aria-label="移动端导航">
+        <a href="#about">公司简介</a>
+        <a href="#games">游戏作品</a>
+        <a href="#capabilities">研发能力</a>
+        <a href="#contact">联系方式</a>
+      </nav>
+
+      <main>
+        <section class="hero" aria-labelledby="hero-title">
+          <canvas id="signal-canvas" aria-hidden="true"></canvas>
+          <div class="hero-grid">
+            <div class="hero-copy">
+              <p class="eyebrow">MIRO GAME STUDIO</p>
+              <h1 id="hero-title">郑州米罗网络科技有限公司</h1>
+              <p class="hero-lede">
+                以稳定技术、精细美术和长期运营思维，打造适合移动端与多平台发行的精品游戏体验。
+              </p>
+              <div class="hero-actions">
+                <a class="button button-primary" href="#games">
+                  <span>查看游戏矩阵</span>
+                  <span class="button-icon" aria-hidden="true">↘</span>
+                </a>
+                <a class="button button-secondary" href="#contact">
+                  <span>联系合作</span>
+                  <span class="button-icon" aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="signal-tags" aria-label="业务关键词">
+                <span>Game R&D</span>
+                <span>Publishing</span>
+                <span>Live Ops</span>
+                <span>Cross Platform</span>
+              </div>
+            </div>
+
+            <figure class="logo-stage" aria-label="Miro 品牌标识">
+              <span class="stage-grid" aria-hidden="true"></span>
+              <img src="/miro-logo-transparent.png" alt="Miro 郑州米罗网络科技有限公司" />
+              <figcaption>
+                <span>Prototype</span>
+                <span>Launch</span>
+                <span>Operate</span>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
+        <section class="section intro-section" id="about" aria-labelledby="about-title">
+          <div class="section-copy">
+            <p class="section-kicker">About Miro</p>
+            <h2 id="about-title">一家面向长线运营的游戏研发公司。</h2>
+            <p>
+              米罗网络立足郑州，围绕玩法原型、工程实现、美术包装、发行协作与数据化运营建立完整流程。
+              我们相信好游戏不只来自一次灵感，更来自可验证的迭代节奏和对玩家体验的持续打磨。
+            </p>
+          </div>
+          <div class="principles" aria-label="公司优势">
+            <article>
+              <span class="principle-index">01</span>
+              <h3>快速原型</h3>
+              <p>用小步快跑验证核心乐趣，把资源集中在最能产生留存的玩法循环上。</p>
+            </article>
+            <article>
+              <span class="principle-index">02</span>
+              <h3>稳定工程</h3>
+              <p>关注性能、包体、版本节奏和线上质量，让内容迭代有可靠的技术底座。</p>
+            </article>
+            <article>
+              <span class="principle-index">03</span>
+              <h3>长期运营</h3>
+              <p>以活动、数值、社区反馈和数据洞察推动产品生命周期持续增长。</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section games-section" id="games" aria-labelledby="games-title">
+          <div class="section-heading">
+            <p class="section-kicker">Game Portfolio</p>
+            <h2 id="games-title">游戏作品与项目方向</h2>
+            <p>
+              下方为门户展示用项目位，可替换为公司已上线游戏、预约中产品或研发中的重点项目。
+            </p>
+          </div>
+          <div class="game-grid" data-game-grid></div>
+        </section>
+
+        <section class="section capabilities-section" id="capabilities" aria-labelledby="capabilities-title">
+          <div class="capability-visual" aria-hidden="true">
+            <div class="radar">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <div class="section-copy">
+            <p class="section-kicker">Production System</p>
+            <h2 id="capabilities-title">从玩法验证到商业化上线的完整链路。</h2>
+            <p>
+              团队可围绕休闲、策略、互动叙事和轻中度产品提供研发支持，也欢迎发行、渠道、IP 与内容合作。
+            </p>
+            <div class="capability-list">
+              <div>
+                <strong>玩法策划</strong>
+                <span>核心循环、关卡节奏、商业化结构</span>
+              </div>
+              <div>
+                <strong>工程研发</strong>
+                <span>客户端、工具链、版本管理、性能优化</span>
+              </div>
+              <div>
+                <strong>视觉包装</strong>
+                <span>角色、场景、UI、动效与商店素材</span>
+              </div>
+              <div>
+                <strong>运营增长</strong>
+                <span>活动、数据分析、用户反馈与内容迭代</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+          <div class="contact-panel">
+            <div class="contact-brand">
+              <img src="/miro-logo-transparent.png" alt="Miro 郑州米罗网络科技有限公司" />
+              <p class="section-kicker">Contact</p>
+              <h2 id="contact-title">让下一个项目从一次沟通开始。</h2>
+              <p>
+                欢迎商务合作、发行合作、人才沟通和媒体联系。请将下面信息替换为你的真实邮箱、电话与地址。
+              </p>
+              <dl class="contact-list">
+                <div>
+                  <dt>商务邮箱</dt>
+                  <dd><a href="mailto:business@miro-game.com" data-email-link>business@miro-game.com</a></dd>
+                </div>
+                <div>
+                  <dt>联系电话</dt>
+                  <dd>0371-0000-0000</dd>
+                </div>
+                <div>
+                  <dt>公司地址</dt>
+                  <dd>河南省郑州市</dd>
+                </div>
+              </dl>
+            </div>
+
+            <form class="contact-form" data-contact-form>
+              <label>
+                <span>姓名</span>
+                <input type="text" name="name" placeholder="您的姓名" autocomplete="name" required />
+              </label>
+              <label>
+                <span>邮箱</span>
+                <input type="email" name="email" placeholder="name@example.com" autocomplete="email" required />
+              </label>
+              <label>
+                <span>合作类型</span>
+                <select name="topic" required>
+                  <option value="商务合作">商务合作</option>
+                  <option value="发行合作">发行合作</option>
+                  <option value="人才沟通">人才沟通</option>
+                  <option value="媒体联系">媒体联系</option>
+                </select>
+              </label>
+              <label>
+                <span>留言</span>
+                <textarea name="message" rows="5" placeholder="简单介绍您的需求"></textarea>
+              </label>
+              <button class="button button-primary form-submit" type="submit">
+                <span>生成邮件</span>
+                <span class="button-icon" aria-hidden="true">→</span>
+              </button>
+              <p class="form-note" data-form-note>表单会打开本机邮件客户端，不会收集或上传数据。</p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <span>© <span data-year></span> 郑州米罗网络科技有限公司</span>
+        <a href="#top">返回顶部</a>
+      </footer>
+    </div>
+  </body>
+</html>
