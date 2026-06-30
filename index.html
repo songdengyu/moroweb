@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#07080c" />
+    <meta name="theme-color" content="#f7fbff" />
     <meta
       name="description"
       content="郑州米罗网络科技有限公司是一家专注游戏研发、发行合作与长期运营的网络科技公司。"
@@ -11,6 +11,7 @@
     <title>郑州米罗网络科技有限公司 | Miro Game Studio</title>
     <link rel="icon" href="/miro-mark.png" />
     <link rel="preload" as="image" href="/miro-logo-transparent.png" />
+    <link rel="preload" as="image" href="/chongbao-dataowang.png" />
     <script type="module" src="/src/main.js"></script>
   </head>
   <body>
@@ -30,7 +31,7 @@
           <a href="#contact">联系方式</a>
         </nav>
 
-        <a class="header-action" href="#contact">商务合作</a>
+        <a class="header-action" href="mailto:mirokejicompany@gmail.com">商务合作</a>
 
         <button
           class="menu-button"
@@ -58,14 +59,14 @@
           <canvas id="signal-canvas" aria-hidden="true"></canvas>
           <div class="hero-grid">
             <div class="hero-copy">
-              <p class="eyebrow">MIRO GAME STUDIO</p>
+              <p class="eyebrow">MiroTechnology</p>
               <h1 id="hero-title">郑州米罗网络科技有限公司</h1>
               <p class="hero-lede">
                 以稳定技术、精细美术和长期运营思维，打造适合移动端与多平台发行的精品游戏体验。
               </p>
               <div class="hero-actions">
                 <a class="button button-primary" href="#games">
-                  <span>查看游戏矩阵</span>
+                  <span>查看游戏作品</span>
                   <span class="button-icon" aria-hidden="true">↘</span>
                 </a>
                 <a class="button button-secondary" href="#contact">
@@ -81,9 +82,8 @@
               </div>
             </div>
 
-            <figure class="logo-stage" aria-label="Miro 品牌标识">
-              <span class="stage-grid" aria-hidden="true"></span>
-              <img src="/miro-logo-transparent.png" alt="Miro 郑州米罗网络科技有限公司" />
+            <figure class="hero-card" aria-label="Miro 品牌标识">
+              <img class="hero-logo" src="/miro-logo-transparent.png" alt="Miro 郑州米罗网络科技有限公司" />
               <figcaption>
                 <span>Prototype</span>
                 <span>Launch</span>
@@ -124,9 +124,9 @@
         <section class="section games-section" id="games" aria-labelledby="games-title">
           <div class="section-heading">
             <p class="section-kicker">Game Portfolio</p>
-            <h2 id="games-title">游戏作品与项目方向</h2>
+            <h2 id="games-title">游戏作品</h2>
             <p>
-              下方为门户展示用项目位，可替换为公司已上线游戏、预约中产品或研发中的重点项目。
+              聚焦轻松、有记忆点、适合持续更新的移动端游戏体验。
             </p>
           </div>
           <div class="game-grid" data-game-grid></div>
@@ -173,54 +173,17 @@
             <div class="contact-brand">
               <img src="/miro-logo-transparent.png" alt="Miro 郑州米罗网络科技有限公司" />
               <p class="section-kicker">Contact</p>
-              <h2 id="contact-title">让下一个项目从一次沟通开始。</h2>
+              <h2 id="contact-title">让合作从一次沟通开始。</h2>
               <p>
-                欢迎商务合作、发行合作、人才沟通和媒体联系。请将下面信息替换为你的真实邮箱、电话与地址。
+                欢迎商务合作、发行合作、渠道合作与媒体联系。
               </p>
-              <dl class="contact-list">
-                <div>
-                  <dt>商务邮箱</dt>
-                  <dd><a href="mailto:business@miro-game.com" data-email-link>business@miro-game.com</a></dd>
-                </div>
-                <div>
-                  <dt>联系电话</dt>
-                  <dd>0371-0000-0000</dd>
-                </div>
-                <div>
-                  <dt>公司地址</dt>
-                  <dd>河南省郑州市</dd>
-                </div>
-              </dl>
             </div>
 
-            <form class="contact-form" data-contact-form>
-              <label>
-                <span>姓名</span>
-                <input type="text" name="name" placeholder="您的姓名" autocomplete="name" required />
-              </label>
-              <label>
-                <span>邮箱</span>
-                <input type="email" name="email" placeholder="name@example.com" autocomplete="email" required />
-              </label>
-              <label>
-                <span>合作类型</span>
-                <select name="topic" required>
-                  <option value="商务合作">商务合作</option>
-                  <option value="发行合作">发行合作</option>
-                  <option value="人才沟通">人才沟通</option>
-                  <option value="媒体联系">媒体联系</option>
-                </select>
-              </label>
-              <label>
-                <span>留言</span>
-                <textarea name="message" rows="5" placeholder="简单介绍您的需求"></textarea>
-              </label>
-              <button class="button button-primary form-submit" type="submit">
-                <span>生成邮件</span>
-                <span class="button-icon" aria-hidden="true">→</span>
-              </button>
-              <p class="form-note" data-form-note>表单会打开本机邮件客户端，不会收集或上传数据。</p>
-            </form>
+            <div class="email-card" aria-label="商务邮箱">
+              <span class="email-label">商务邮箱</span>
+              <a href="mailto:mirokejicompany@gmail.com" data-email-link>mirokejicompany@gmail.com</a>
+              <p>请通过邮箱发送合作需求、项目资料或媒体沟通信息，我们会尽快回复。</p>
+            </div>
           </div>
         </section>
       </main>
