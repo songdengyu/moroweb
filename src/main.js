@@ -1,6 +1,6 @@
 import './styles.css';
 
-const contactEmail = 'mirokejicompany@gmail.com';
+const contactEmail = 'mironetworktech@zzmiro.com';
 
 const games = [
   {
